@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+input[type="file"] {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 200vh;
+  box-sizing: border-box;
+  background-color: #f37820;
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.input-text {
+  height: 28px;
+  font-size: 14px;
+}
+
+#dataNascimento {
+  height: 28px;
+  font-size: 14px;
+}
+
+.formulario {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Poppins", "sans-serif";
+  margin: 10px;
+}
+
+.formulario_dados {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fff;
+  top: 50px;
+  width: 500px;
+  height: 880px;
+  border-radius: 20px;
+  margin-left: 50px;
+  font-size: 18px;
+  padding: 21.5px;
+}
+
+.input-file {
+  height: 78px;
+  width: 321px;
+  background-image: url(imagemArquivo.png);
+  cursor: pointer;
+}
+
+.formulario_buttons {
+  display: flex;
+  flex: space-between;
+  gap: 30px;
+}
+
+.formulario_buttons_button {
+  width: 400px;
+  height: 45px;
+  font-size: 20px;
+  text-align: center;
+  background-color: orange;
+  border-radius: 8px;
+  padding: 0px 20px;
+  cursor: pointer;
+}

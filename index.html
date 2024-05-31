@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Formulario de inscrição</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <main class="formulario">
+      <form class="formulario_dados" id="form">
+        <h1>Inscreva-se</h1>
+        <!--campos de digitar-->
+        <label for="nome">Nome Completo</label>
+        <input type="text" class="input-text" />
+        <label for="telefone">Telefone</label>
+        <input type="tel" class="input-text" />
+        <label for="email">Email</label>
+        <input type="email" id="email" class="input-text" />
+        <label for="email_confirmacao">Confirmação de Email</label>
+        <input type="email" id="emailDeConfirmacao" class="input-text" />
+        <label for="dataNascimento">Data de Nascimento</label>
+        <input type="date" id="dataNascimento" />
+
+        <!--area dos arquivos-->
+        <label for="">Comprovante de Residencia(pdf)></label>
+        <label for="comprovanteResidencia" class="input-file"></label>
+        <input
+          type="file"
+          nome="comprovanteResidencia"
+          id="comprovanteResidencia"
+        />
+        <label for="">Identidade(pdf)></label>
+        <label for="identidade" class="input-file"></label>
+        <input type="file" nome="identidade" id="identidade" />
+
+        <!--botao de enviar-->
+        <div class="formulario_buttons">
+          <button type="reset" id="reset" class="formulario_buttons_button">
+            Resetar
+          </button>
+          <button
+            type="submit"
+            id="submit"
+            class="formulario_buttons_button"
+            onclick="mensagem()"
+          >
+            Enviar
+          </button>
+        </div>
+        <p style="color: red">*Atenção! Preencha todos os campos!</p>
+      </form>
+
+      <img src="imagemfundo.png" alt="Imagem de fundo" />
+    </main>
+  </body>
+</html>
